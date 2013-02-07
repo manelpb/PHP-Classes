@@ -10,7 +10,7 @@ class NiceDateException extends Exception {}
  * @todo Add more functionality!
  */
 class NiceDate
-{  
+{	
 	/**
 	 * Get the difference between 2 dates and return a nicely formatted string
 	 *
