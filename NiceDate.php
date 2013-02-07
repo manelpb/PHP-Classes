@@ -52,11 +52,11 @@ class NiceDate
 	/**
 	 * Render out a text string interval (e.g. 20 Seconds)
 	 *
-	 * @param object $interval (DateTime)
+	 * @param object $interval (DateInterval)
 	 * @throws NiceDateException
 	 * @return string
 	 */
-	public static function format_interval_diff(DateTime $interval)
+	public static function format_interval_diff(DateInterval $interval)
 	{
 		// Result storage
 		$formattedDate = null;
@@ -88,7 +88,7 @@ class NiceDate
 		}
 		else
 		{
-			throw new NiceDateException('Invalid interval difference.');
+			$formattedDate = 'Just Now';
 		}
 		
 		return $formattedDate;
